@@ -12,19 +12,20 @@ nmap <C-n> :set invnumber<CR>
 "new line
 nmap nl o<Esc>k 
 "nmap <A-d> dd
+"commands to move up or down the line
 nmap <A-j> ddp
 nmap <A-k> ddkP
 
 
 
-"inputmap
+"input map
+"exit input mode
 imap <C-l> <Esc>
-
-
+imap ii <Esc>
 
 " Leader Mappings
 map <Space> <leader>
-map <Leader>w :update<CR>
+map <Leader>w :wa<CR>
 map <Leader>q :qall<CR>
 
 
