@@ -65,30 +65,35 @@ set wildmenu
 set mouse=a
 set path+=**
 set scrolloff=5
-"normal map
 
-"replace word with the first copied
+"normal map
 nmap cx ciw<Esc>"0p
-"nmap <C-n> :set invnumber<CR>
-"new line
-nmap nl o<Esc>k 
-"nmap <A-d> dd
+nmap nl o<Esc>k
 "commands to move up or down the line
 nmap <A-j> ddp
 nmap <A-k> ddkP
-
+nmap L $
+nmap H ^
+nmap K #
+nmap J *
+nmap <leader>v "*p
 nmap <A-w> <C-w>
 
 "input map
-"exit input mode
 imap <C-l> <Esc>
 imap ii <Esc>
 imap pp <Esc>pi
 imap ;; <Esc>A;<Esc>
 imap <C-v> <Esc>"*p
 
+"visual map
+vmap L $
+vmap H ^
+vmap <leader>v "*p
+vmap <leader>c "*y
+
 " Leader Mappings
-map <Space> <leader>
+let mapleader = " "
 map <Leader>w :wa<CR>
 map <Leader>q :qall<CR>
 
